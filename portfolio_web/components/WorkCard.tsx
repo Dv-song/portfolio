@@ -19,12 +19,12 @@ interface WorkProps {
 
 const WorkCard: React.FC<WorkProps> = ({ work }) => {
   return (
-    <div className="max-w-[360px] h-[436px] flex flex-col justify-between mb-14">
+    <div className="work_card max-w-[360px] h-[436px] flex flex-col justify-between mb-14 image-shadow">
       <div>
         <Image
           src={work.coverimg}
           alt={work.title}
-          className="w-full object-cover mb-2 shadow rounded image-shadow"
+          className="card_cover w-full object-cover mb-2 rounded"
         />
         <div>
           <div className="flex flex-row justify-between app_gray text-sm">

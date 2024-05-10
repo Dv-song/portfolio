@@ -59,14 +59,14 @@ export default function Work() {
             {/* links for subsection of the page */}
             <div className="my-[28px]">
               <a
-                href=""
+                href="#skills"
                 className="app_gray underline underline-offset-2 mt-[6px] pl-4"
               >
                 View Skills
               </a>{" "}
               <br />
               <a
-                href=""
+                href="#work"
                 className="app_gray underline underline-offset-2 mt-[6px] pl-4"
               >
                 View Work

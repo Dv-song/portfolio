@@ -92,7 +92,7 @@ export const WORKLIST = [
         id: 5, title: 'Partiful',
         position: "UX Designer",
         time: "2024",
-        subtitle: "Optimizing user experience for Partiful Users. Focus: Past Events", skilltags: ["UIUX"],
+        subtitle: "Optimizing user experience for Partiful users. Focus: Past Events", skilltags: ["UIUX"],
         coverimg: partifulcover,
         tag: false,
         tagtxt: "",
