@@ -1,13 +1,13 @@
-import llmcover from "../public/works/llmCover.png";
-import dymaxioncover from "../public/works/dymaxionCover.png";
-import portfoliocover from "../public/works/portfolioCover.png";
-import cvcover from "../public/works/cvcover.png";
-import partifulcover from "../public/works/partifulcover.png";
-import sweolcover from "../public/works/sewolcover.png";
-import ffcover from "../public/works/ffcover.png";
-import handercover from "../public/works/handercover.png"
-import resocover from "../public/works/resocover.png";
-import qgcover from "../public/works/quantguidecover.png"
+import llmcover from "../public/llmCover.png"
+import dymaxioncover from "../public/dymaxionCover.png";
+import portfoliocover from "../public/portfolioCover.png";
+import cvcover from "../public/cvcover.png";
+import partifulcover from "../public/partifulcover.png";
+import sweolcover from "../public/sewolcover.png";
+import ffcover from "../public/ffcover.png";
+import handercover from "../public/handercover.png"
+import resocover from "../public/resocover.png";
+import qgcover from "../public/quantguidecover.png"
 
 
 export const NAV_LINKS = [
@@ -53,67 +53,67 @@ export const WORKLIST = [
         position: "Research Assistant",
         time: "Summer 2024",
         subtitle: "Summer Research @ Brown University", skilltags: ["AI/ML", "Database", "SQL"],
-        coverimg: { llmcover },
+        coverimg: llmcover,
         tag: true,
         tagtxt: "Summer 2024",
-        category: 'Research', selected: true
+        category: ['Research', 'Selected'], selected: true
     },
     {
         id: 2, title: 'Dymaxion',
         position: "Software Engineer",
         time: "Summer 2024",
         subtitle: "Automating Interior Design", skilltags: ["Full-Stack", "Mobile Dev", "Swift", "Intern"],
-        coverimg: { dymaxioncover },
+        coverimg: dymaxioncover,
         tag: true,
         tagtxt: "Summer 2024",
-        category: 'Engineering', selected: true
+        category: ['Engineering', 'Selected'], selected: true
     },
     {
         id: 3, title: 'Portfolio Development',
         position: "Project",
         time: "2024",
         subtitle: "Personal Portfolio Design & Development.", skilltags: ["UI/UX", "Frontend", "Design"],
-        coverimg: { portfoliocover },
+        coverimg: portfoliocover,
         tag: false,
         tagtxt: "",
-        category: ['UI/UX', 'Engineering'], selected: true
+        category: ['UI/UX', 'Engineering', 'Selected'], selected: true
     },
     {
         id: 4, title: 'Drowsiness Detection Device',
         position: "Project",
         time: "2024",
         subtitle: "Drowsiness detection using Machine Learning and Convolutional Neural Network for Drivers.", skilltags: ["AI/ML", "UIUX", "Computer Vision"],
-        coverimg: { cvcover },
+        coverimg: cvcover,
         tag: true,
         tagtxt: "Work In Progress",
-        category: 'Engineering', selected: true
+        category: ['Engineering', 'Selected'], selected: true
     },
     {
         id: 5, title: 'Partiful',
         position: "UX Designer",
         time: "2024",
         subtitle: "Optimizing user experience for Partiful Users. Focus: Past Events", skilltags: ["UIUX"],
-        coverimg: { partifulcover },
+        coverimg: partifulcover,
         tag: false,
         tagtxt: "",
-        category: 'UI/UX', selected: true
+        category: ['UI/UX', 'Selected'], selected: true
     },
     {
         id: 6, title: 'SeWol(세월)',
         position: "Project",
         time: "2024",
         subtitle: "Exploring the meaning of space ownership in the modern urban environment.", skilltags: ["HCI", "UIUX", "AI/ML"],
-        coverimg: { sweolcover },
+        coverimg: sweolcover,
         tag: true,
         tagtxt: "Work In Progress",
-        category: ['Engineering', 'Research'], selected: true
+        category: ['Engineering', 'Research', 'Selected'], selected: true
     },
     {
         id: 7, title: 'ForeverFan',
         position: "UX Designer",
         time: "2024",
         subtitle: "Connecting independent artists with their fans.", skilltags: ["UIUX"],
-        coverimg: { ffcover },
+        coverimg: ffcover,
         tag: false,
         tagtxt: "",
         category: 'UI/UX', selected: false
@@ -123,27 +123,27 @@ export const WORKLIST = [
         position: "Co-Founder",
         time: "2023 - 2024",
         subtitle: "With mission to reduce carbon footprint of college students.", skilltags: ["UIUX", "PM", "Full-Stack", "Startup"],
-        coverimg: { handercover },
+        coverimg: handercover,
         tag: false,
         tagtxt: "",
-        category: ['UI/UX', 'Engineering'], selected: true
+        category: ['UI/UX', 'Engineering', 'Selected'], selected: true
     },
     {
         id: 9, title: 'Reso',
         position: "Chief of Staff, UX Researcher",
         time: "2023 - 2024",
         subtitle: "Reimagining case management process for arbitrators and law firms.", skilltags: ["UIUX", "PM", "UX Research"],
-        coverimg: { resocover },
+        coverimg: resocover,
         tag: false,
         tagtxt: "",
-        category: 'UIUX', selected: true
+        category: ['UIUX', 'Selected'], selected: true
     },
     {
         id: 10, title: 'QuantGuide',
         position: "UIUX Designer, Frontend Dev",
         time: "2023",
         subtitle: "Making quant interview prep more accessible.", skilltags: ["Frontend", "UIUX"],
-        coverimg: { qgcover },
+        coverimg: qgcover,
         tag: false,
         tagtxt: "",
         category: ['UIUX', 'Engineering'], selected: true

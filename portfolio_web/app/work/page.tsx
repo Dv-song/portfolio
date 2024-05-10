@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
 import { ENGNSKILLS } from "@/constants";
-import { DESIGNSKILLS } from "@/constants";
+import { DESIGNSKILLS, WORKTYPES, WORKLIST } from "@/constants";
+import { useState } from "react";
+import WorkCard from "@/components/WorkCard";
 
 const playfair = Playfair_Display({
   weight: ["400", "500", "600", "700", "800"],
@@ -10,6 +13,12 @@ const playfair = Playfair_Display({
 });
 
 export default function Work() {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const filteredWorkList =
+    selectedCategory === "All"
+      ? WORKLIST
+      : WORKLIST.filter((work) => work.category.includes(selectedCategory));
+
   return (
     <>
       {/* Design Approach Section */}
@@ -74,7 +83,7 @@ export default function Work() {
       {/* Skills Section */}
       <section
         id="skills"
-        className="relative flex flex-col flex-grow max-container padding-container py-2 px-20  mt-20 mb-[136px] bg-green-100"
+        className="relative flex flex-col flex-grow max-container padding-container py-2 px-20  mt-20 mb-[136px] "
       >
         <h3 className="app_gray font-medium mb-7 ">SKILLS</h3>
         <div className="flex flex-row mx-auto ">
@@ -100,12 +109,39 @@ export default function Work() {
           </div>
         </div>
       </section>
-      {/* Skills Section */}
+      {/* Work Section */}
       <section
-        id="skills"
-        className="relative flex flex-col flex-grow max-container padding-container py-2 px-20 mb-[136px] bg-green-100"
+        id="work"
+        className="relative flex flex-col flex-grow max-container padding-container py-2 px-20 mb-[136px]"
       >
-        <h3 className="app_gray font-medium mb-7 bg-red-200">SKILLS</h3>
+        <h3 className="app_gray font-medium mb-7">WORK</h3>
+        {/* filter bar */}
+        <div className="flex flex-row justify-center mb-11">
+          <div className="flex flex-row mb-5 max-w-[1124px] w-full justify-between">
+            {WORKTYPES.map((category) => (
+              <button
+                key={category}
+                id="workfilter"
+                className={`px-4 py-1 rounded-[500px] font-normal ${
+                  selectedCategory === category ? "app_blk_accent" : "app_gray"
+                } hover:blue_accent`}
+                onClick={() => setSelectedCategory(category)}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </div>
+        {/* work list section */}
+        <div className="flex flex-row justify-center mb-11">
+          <div className="flex flex-row max-w-[1124px] w-full justify-between">
+            <div className="grid grid-cols-3 gap-4">
+              {filteredWorkList.map((work) => (
+                <WorkCard key={work.id} work={work} />
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

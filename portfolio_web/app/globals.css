@@ -21,6 +21,10 @@ body {
   color: #2453ff;
 }
 
+#workfilter:hover {
+  background-color: #f3f3f3;
+}
+
 .app_gray {
   color: #888888;
 }
@@ -89,4 +93,13 @@ body {
 
 .app_blk_accent {
   color: #121929;
+}
+
+.image-shadow {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.image-shadow:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
