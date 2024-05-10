@@ -274,9 +274,9 @@ export default function About() {
       {/* Connect! Section */}
       <section
         id="Connect"
-        className="bg-red-100 relative flex flex-col flex-grow max-container padding-container py-2 px-20  mt-8 mb-[136px]"
+        className=" relative flex flex-col flex-grow max-container padding-container py-2 px-20  mt-8 mb-[136px]"
       >
-        <h3 className="app_gray font-medium mb-7 bg-blue-200">SAY HI</h3>
+        <h3 className="app_gray font-medium mb-7 ">SAY HI</h3>
 
         <h2
           className={`text-[64px]  ${playfair.className} italic font-medium app_blk_accent mx-auto  mt-[136px]`}
@@ -288,9 +288,16 @@ export default function About() {
           hesitate to reach out! I love making new friends and catching up with
           my old friends.{" "}
         </p>
-        <div className="flex flex-row">
-          <Button text="☕ Coffee Chat" color="#BBBBBB" />
-          <Button text="👋 Connect" color="#2453FF" />
+        <div className="flex flex-row mt-2 mx-auto gap-4">
+          <a
+            href="mailto:seung_heon_song@brown.edu?subject=[From%20Portfolio]%20Hey%20Dave!&body=*%20please%20share%20what%20you%20want%20to%20talk%20about!"
+            title="send me an email"
+          >
+            <Button text="☕ Coffee Chat" color="#BBBBBB" />
+          </a>
+          <a href="/contact">
+            <Button text="👋 Connect" color="#2453FF" />
+          </a>
         </div>
       </section>
     </>

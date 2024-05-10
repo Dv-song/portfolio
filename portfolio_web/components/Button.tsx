@@ -5,7 +5,7 @@ const Button = (props: { text: string; color: string }) => {
     <button
       type="button"
       style={{ backgroundColor: props.color }}
-      className={`text-white py-[12px] px-[32px]`}
+      className={`text-white py-[12px] px-[32px] min-w-[170px] rounded font-bold`}
     >
       {props.text}
     </button>

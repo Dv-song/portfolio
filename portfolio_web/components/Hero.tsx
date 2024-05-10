@@ -33,7 +33,7 @@ const Hero = () => {
       <Image
         src={bg}
         alt="home background image"
-        className="absolute inset-0 z-0 max-h-[710px] mt-16 ml-[-744px] "
+        className="absolute inset-0 z-0 max-h-[710px] mt-16 ml-[-744px] lg:max-w-[1500px]"
       />
 
       <div id="bio" className="flex flex-col justify-center leading-relaxed">
