@@ -71,7 +71,12 @@ export default function About() {
                 onMouseEnter={() => setHoveredIndex(1)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <a href="https://www.hander.us/" className={`link_underline`}>
+                <a
+                  href="https://www.hander.us/"
+                  className={`link_underline`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Hander
                 </a>
                 <sup className="text-sm">1</sup>
@@ -84,7 +89,12 @@ export default function About() {
                 onMouseEnter={() => setHoveredIndex(1)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <a href="https://www.hander.us/" className={`link_underline`}>
+                <a
+                  href="https://www.hander.us/"
+                  className={`link_underline`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Hander
                 </a>
                 <sup className="text-sm">1</sup>
@@ -97,7 +107,12 @@ export default function About() {
                 onMouseEnter={() => setHoveredIndex("2")}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <a href="https://www.reso.io/" className={`link_underline`}>
+                <a
+                  href="https://www.reso.io/"
+                  className={`link_underline`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Reso
                 </a>
                 <sup className="text-sm">2</sup>
@@ -113,6 +128,8 @@ export default function About() {
                 <a
                   href="https://www.dymaxion.design/"
                   className={`link_underline`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Dymaxion
                 </a>
@@ -129,6 +146,8 @@ export default function About() {
                 <a
                   href="https://www.quantguide.io/"
                   className={`link_underline`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   QuantGuide
                 </a>
@@ -145,6 +164,8 @@ export default function About() {
                 <a
                   href="https://www.brownentrepreneurship.com/"
                   className={`link_underline`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Brown EP Tech
                 </a>
@@ -262,7 +283,7 @@ export default function About() {
         id="TLDRs & OPINIONS"
         className=" relative flex flex-col flex-grow max-container padding-container py-2 px-20  mt-20 mb-[136px]"
       >
-        <h3 className="app_gray font-medium mb-7">TLDRs & OPINIONS</h3>
+        <h3 className="app_gray font-medium mb-7">TLDRS & OPINIONS</h3>
 
         <h2
           className={`text-[30px]  ${playfair.className} italic font-medium app_blk_accent mx-auto  my-[136px]`}

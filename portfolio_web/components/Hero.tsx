@@ -56,7 +56,12 @@ const Hero = () => {
             onMouseEnter={() => setHoveredIndex(1)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <a href="https://www.brown.edu/" className="link_underline">
+            <a
+              href="https://www.brown.edu/"
+              className="link_underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Brown University
             </a>
             <sup className="text-sm">1</sup>
@@ -69,7 +74,12 @@ const Hero = () => {
             onMouseEnter={() => setHoveredIndex(2)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <a href="https://www.hander.us/" className={`link_underline`}>
+            <a
+              href="https://www.hander.us/"
+              className={`link_underline`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Hander
             </a>
             <sup className="text-sm">2</sup>
@@ -82,7 +92,12 @@ const Hero = () => {
             onMouseEnter={() => setHoveredIndex("3")}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <a href="https://www.reso.io/" className={`link_underline`}>
+            <a
+              href="https://www.reso.io/"
+              className={`link_underline`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Reso
             </a>
             <sup className="text-sm">3</sup>
@@ -95,7 +110,12 @@ const Hero = () => {
             onMouseEnter={() => setHoveredIndex("3,4")}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <a href="https://www.quantguide.io/" className={`link_underline`}>
+            <a
+              href="https://www.quantguide.io/"
+              className={`link_underline`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               QuantGuide
             </a>
             <sup className="text-sm">3,4</sup>
@@ -111,6 +131,8 @@ const Hero = () => {
             <a
               href="https://www.brownentrepreneurship.com/"
               className={`link_underline`}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Brown EP Tech
             </a>
