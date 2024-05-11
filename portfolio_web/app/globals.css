@@ -33,6 +33,20 @@ body {
   color: #888888;
 }
 
+.hander_accent {
+  color: #00b6b0;
+}
+
+.hander_gradient {
+  font-weight: bold;
+  font-size: 32px;
+  background: linear-gradient(to left, black, #00b6b0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
 .link_gray {
   color: #bbbbbb;
 }

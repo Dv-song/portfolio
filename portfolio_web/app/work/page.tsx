@@ -24,7 +24,7 @@ export default function Work() {
       {/* Design Approach Section */}
       <section
         id="design_approach"
-        className="relative flex flex-col flex-grow max-container padding-container py-2 px-20  mt-20 "
+        className="relative flex flex-col flex-grow max-container padding-container py-2 px-20  mt-20"
       >
         <h3 className="app_gray font-medium mb-7">BIO</h3>
         {/* approach content */}

@@ -49,6 +49,7 @@ export const WORKTYPES = [
 
 export const WORKLIST = [
     {
+        href: "/work",
         id: 1, title: 'Multimodal LLM Research',
         position: "Research Assistant",
         time: "Summer 2024",
@@ -59,6 +60,7 @@ export const WORKLIST = [
         category: ['Research', 'Selected'], selected: true
     },
     {
+        href: "/work",
         id: 2, title: 'Dymaxion',
         position: "Software Engineer",
         time: "Summer 2024",
@@ -69,6 +71,7 @@ export const WORKLIST = [
         category: ['Engineering', 'Selected'], selected: true
     },
     {
+        href: "/work",
         id: 3, title: 'Portfolio Development',
         position: "Project",
         time: "2024",
@@ -79,6 +82,7 @@ export const WORKLIST = [
         category: ['UI/UX', 'Engineering', 'Selected'], selected: true
     },
     {
+        href: "/work",
         id: 4, title: 'Drowsiness Detection Device',
         position: "Project",
         time: "2024",
@@ -86,9 +90,10 @@ export const WORKLIST = [
         coverimg: cvcover,
         tag: true,
         tagtxt: "Work In Progress",
-        category: ['Engineering', 'Selected'], selected: true
+        category: ['Engineering'], selected: true
     },
     {
+        href: "/work/pages/partiful",
         id: 5, title: 'Partiful',
         position: "UX Designer",
         time: "2024",
@@ -99,6 +104,7 @@ export const WORKLIST = [
         category: ['UI/UX', 'Selected'], selected: true
     },
     {
+        href: "/work",
         id: 6, title: 'SeWol(세월)',
         position: "Project",
         time: "2024",
@@ -106,9 +112,10 @@ export const WORKLIST = [
         coverimg: sweolcover,
         tag: true,
         tagtxt: "Work In Progress",
-        category: ['Engineering', 'Research', 'Selected'], selected: true
+        category: ['Engineering', 'Research'], selected: true
     },
     {
+        href: "/work",
         id: 7, title: 'ForeverFan',
         position: "UX Designer",
         time: "2024",
@@ -119,6 +126,7 @@ export const WORKLIST = [
         category: 'UI/UX', selected: false
     },
     {
+        href: "/work/pages/hander",
         id: 8, title: 'Hander',
         position: "Co-Founder",
         time: "2023 - 2024",
@@ -129,6 +137,7 @@ export const WORKLIST = [
         category: ['UI/UX', 'Engineering', 'Selected'], selected: true
     },
     {
+        href: "/work",
         id: 9, title: 'Reso',
         position: "Chief of Staff, UX Researcher",
         time: "2023 - 2024",
@@ -136,9 +145,10 @@ export const WORKLIST = [
         coverimg: resocover,
         tag: false,
         tagtxt: "",
-        category: ['UIUX', 'Selected'], selected: true
+        category: ['UIUX'], selected: true
     },
     {
+        href: "/work",
         id: 10, title: 'QuantGuide',
         position: "UIUX Designer, Frontend Dev",
         time: "2023",
