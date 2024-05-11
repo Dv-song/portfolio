@@ -3,7 +3,7 @@ import Image from "next/image";
 import partifulbanner from "../../../../public/partifulbanner.png";
 import flow1 from "../../../../public/Flow 1.png";
 import flow2 from "../../../../public/Flow 2.png";
-import flow3 from "../../../../public/Flow 3.png";
+import flow3 from "../../../../public/Flow 3.jpg";
 
 const page = () => {
   return (
@@ -225,8 +225,44 @@ const page = () => {
         </p>
 
         <Image src={flow1} alt="Flow image" className="rounded" />
-        <Image src={flow2} alt="Flow image" className="rounded" />
-        <Image src={flow3} alt="Flow image" className="rounded" />
+        <Image src={flow2} alt="Flow image2" className="rounded" />
+        <Image src={flow3} alt="Flow image3" className="rounded" />
+
+        {/* part 2: Wireframing */}
+        <h3 className="mt-20 text-[32px]">Part 2: Wireframing</h3>
+        <hr className="mb-10" />
+        <h4 className="text-[24px] my-10">
+          About Initial Wireframe Design Decisions
+        </h4>
+        <p>
+          Initially, past events are not seen at first sight. There are five
+          filters, Open Invite, Upcoming, Hosting, Attended and Past Events. To
+          solve this, we redesigned the events landing page by separating the
+          initial 5 buttons into two sections, Upcoming and Past Events. We
+          added a search bar at the top to help users easily find any event. For
+          the Upcoming section, we removed the add event button as there is
+          already an add event button in the nav bar. We designed with in mind
+          different scenarios. If a user has 0 upcoming events, the space would
+          be filled up by Open Invites, making the page full. If a user has many
+          upcoming events, users can still swipe horizontally and after their
+          upcoming events they’ll find open invite events.
+        </p>
+        <br />
+        <p>
+          Underneath that is a list of mutuals. with fire emojis and a number to
+          indicate the number of shared events between the users.
+        </p>
+        <br />
+        <p>
+          Upcoming events can be scrolled horizontally, and Past events can be
+          scrolled vertically. The two scrolling directions are justified by the
+          fact that usually users have fewer upcoming events but many past
+          events. Past events cards are displayed and can be filtered by Host,
+          Attend, and can be sorted by factors like 1 week, 1 month, 1 years,
+          etc. This section is designed for infinite scrolling, we believe that
+          this is the best way of using the iphone vertical space and allowing
+          users to view past events easily, in an instagram-like way.
+        </p>
       </section>
     </>
   );
