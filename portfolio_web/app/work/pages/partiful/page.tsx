@@ -3,7 +3,7 @@ import Image from "next/image";
 import partifulbanner from "../../../../public/partifulbanner.png";
 import flow1 from "../../../../public/Flow 1.png";
 import flow2 from "../../../../public/Flow 2.png";
-import flow3 from "../../../../public/Flow 3.jpg";
+// import flow3 from "../../../../public/Flow 3.jpg";
 
 const page = () => {
   return (
@@ -226,7 +226,7 @@ const page = () => {
 
         <Image src={flow1} alt="Flow image" className="rounded" />
         <Image src={flow2} alt="Flow image2" className="rounded" />
-        <Image src={flow3} alt="Flow image3" className="rounded" />
+        {/* <Image src={flow3} alt="Flow image3" className="rounded" /> */}
 
         {/* part 2: Wireframing */}
         <h3 className="mt-20 text-[32px]">Part 2: Wireframing</h3>
