@@ -7,7 +7,8 @@ import sweolcover from "../public/sewolcover.png";
 import ffcover from "../public/ffcover.png";
 import handercover from "../public/handercover.png"
 import resocover from "../public/resocover.png";
-import qgcover from "../public/quantguidecover.png"
+import qgcover from "../public/quantguidecover.png";
+import sofa from "../public/ysoa.svg";
 
 
 export const NAV_LINKS = [
@@ -93,8 +94,19 @@ export const WORKLIST = [
         category: ['Engineering'], selected: true
     },
     {
+        href: "/work/pages/YaleSchoolOfArt",
+        id: 5, title: 'Yale School of Art Redesign',
+        position: "Project",
+        time: "2024",
+        subtitle: "Redesign of the Yale School of Art Website for Enhanced Accessibility and Coherence.", skilltags: ["UIUX"],
+        coverimg: sofa,
+        tag: true,
+        tagtxt: "",
+        category: ['UI/UX'], selected: true
+    },
+    {
         href: "/work/pages/partiful",
-        id: 5, title: 'Partiful',
+        id: 6, title: 'Partiful',
         position: "UX Designer",
         time: "2024",
         subtitle: "Optimizing user experience for Partiful users. Focus: Past Events", skilltags: ["UIUX"],
@@ -105,7 +117,7 @@ export const WORKLIST = [
     },
     {
         href: "/work",
-        id: 6, title: 'SeWol(세월)',
+        id: 7, title: 'SeWol(세월)',
         position: "Project",
         time: "2024",
         subtitle: "Exploring the meaning of space ownership in the modern urban environment.", skilltags: ["HCI", "UIUX", "AI/ML"],
@@ -116,7 +128,7 @@ export const WORKLIST = [
     },
     {
         href: "/work",
-        id: 7, title: 'ForeverFan',
+        id: 8, title: 'ForeverFan',
         position: "UX Designer",
         time: "2024",
         subtitle: "Connecting independent artists with their fans.", skilltags: ["UIUX"],
@@ -127,7 +139,7 @@ export const WORKLIST = [
     },
     {
         href: "/work/pages/hander",
-        id: 8, title: 'Hander',
+        id: 9, title: 'Hander',
         position: "Co-Founder",
         time: "2023 - 2024",
         subtitle: "With mission to reduce carbon footprint of college students.", skilltags: ["UIUX", "PM", "Full-Stack", "Startup"],
@@ -138,7 +150,7 @@ export const WORKLIST = [
     },
     {
         href: "/work",
-        id: 9, title: 'Reso',
+        id: 10, title: 'Reso',
         position: "Chief of Staff, UX Researcher",
         time: "2023 - 2024",
         subtitle: "Reimagining case management process for arbitrators and law firms.", skilltags: ["UIUX", "PM", "UX Research"],
@@ -149,7 +161,7 @@ export const WORKLIST = [
     },
     {
         href: "/work",
-        id: 10, title: 'QuantGuide',
+        id: 11, title: 'QuantGuide',
         position: "UIUX Designer, Frontend Dev",
         time: "2023",
         subtitle: "Making quant interview prep more accessible.", skilltags: ["Frontend", "UIUX"],
