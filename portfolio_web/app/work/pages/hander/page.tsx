@@ -6,7 +6,7 @@ import stats from "/public/stats.svg";
 import comp from "/public/competitive analysis.svg";
 import assump from "/public/handerassumption.svg";
 import research from "/public/research.svg";
-import probid from "/public/hander/problemidentification.svg";
+import probid from "/public/problemidentification.svg";
 import features from "/public/handerfeatures.svg";
 import mobile from "/public/mobilesection.svg";
 import plans from "/public/plans.svg";
