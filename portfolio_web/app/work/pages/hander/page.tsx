@@ -1,16 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import banner from "/public/hander/Portfolio/work/handerbanner.svg";
-import prob from "/public/hander/Portfolio/work/problem.svg";
-import stats from "/public/hander/Portfolio/work/stats.svg";
-import comp from "/public/hander/Portfolio/work/competitive analysis.svg";
-import assump from "/public/hander/Portfolio/work/handerassumption.svg";
-import research from "/public/hander/Portfolio/work/research.svg";
-import probid from "/public/hander/Portfolio/work/problemidentification.svg";
-import features from "/public/hander/Portfolio/work/handerfeatures.svg";
-import mobile from "/public/hander/Portfolio/work/mobilesection.svg";
-import plans from "/public/hander/Portfolio/work/plans.svg";
-import workflow from "/public/hander/Portfolio/work/workflow.svg";
+import banner from "/public/handerbanner.svg";
+import prob from "/public/problem.svg";
+import stats from "/public/stats.svg";
+import comp from "/public/competitive analysis.svg";
+import assump from "/public/handerassumption.svg";
+import research from "/public/research.svg";
+import probid from "/public/hander/problemidentification.svg";
+import features from "/public/handerfeatures.svg";
+import mobile from "/public/mobilesection.svg";
+import plans from "/public/plans.svg";
+import workflow from "/public/workflow.svg";
 
 const page = () => {
   return (
