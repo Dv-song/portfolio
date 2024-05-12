@@ -80,7 +80,7 @@ const page = () => {
               </li>
               <li className="flex flex-col">
                 {" "}
-                <p>viviana Wei</p>{" "}
+                <p>Viviana Wei</p>{" "}
               </li>
             </ul>
           </div>

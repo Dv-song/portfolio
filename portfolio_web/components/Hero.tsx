@@ -120,7 +120,7 @@ const Hero = () => {
             </a>
             <sup className="text-sm">3,4</sup>
           </strong>
-          ,and{" "}
+          , and{" "}
           <strong
             className={`font-semibold link_gray ${
               hoveredIndex === 5 ? "gradient-text" : ""
