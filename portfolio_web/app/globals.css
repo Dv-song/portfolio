@@ -25,12 +25,16 @@ body {
   color: #2453ff;
 }
 
+.light_gray_bg {
+  background-color: #f6f6f6;
+}
+
 #workfilter:hover {
   background-color: #f3f3f3;
 }
 
 .app_gray {
-  color: #888888;
+  color: #8d8d8d;
 }
 
 .hander_accent {
@@ -49,6 +53,14 @@ body {
 
 .link_gray {
   color: #bbbbbb;
+}
+
+.dark_gray_text {
+  color: #888888;
+}
+
+.footer_gray_color {
+  color: #cfcfcf;
 }
 
 .link_underline {
