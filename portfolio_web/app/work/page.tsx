@@ -24,27 +24,28 @@ export default function Work() {
       {/* Design Approach Section */}
       <section
         id="design_approach"
-        className="relative flex flex-col flex-grow max-container padding-container py-2 px-20  mt-20"
+        className=" dflex flex-col flex-grow max-container padding-container py-2 px-20  mt-20"
       >
         <h3 className="app_gray font-medium mb-7">BIO</h3>
         {/* approach content */}
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-col min-[1200px]:flex-row min-[1200px]:justify-center min-[1200px]:items-center">
           {/* Design for People, Engineer for Impact slogan */}
           <div
-            className={` max-w-[500px] lg:min-h-[378px] grow flex flex-col justify-between app_blk_accent md:pl-[140px] ${playfair.className} text-6xl font-medium z-10`}
+            className={`max-w-[500px] md:font-[30px] max-[1200px]:mb-11 min-[1200px]:min-h-[378px] grow flex flex-col justify-between app_blk_accent min-[1200px]:pl-[140px] ${playfair.className} text-6xl font-medium z-10`}
           >
-            <h1 className="mb-2">Design for</h1>
-            <h1 className="pl-[130px] mb-2">
-              <span className="italic pl-8"> people</span>,
+            <h1 className="mb-2 max-md:text-[30px]">Design for</h1>
+            <h1 className="lg:pl-[130px] mb-2 max-md:text-[30px]">
+              <span className="italic lg:pl-8 max-md:text-[30px]"> people</span>
+              ,
             </h1>
-            <h1 className="mb-2 -ml-24">Engineer for</h1>
-            <h1 className="pl-[130px]">
+            <h1 className="mb-2 max-md:text-[30px]">Engineer for</h1>
+            <h1 className="lg:pl-[130px] max-md:text-[30px]">
               <span className="italic">impact</span>.
             </h1>
           </div>
 
           {/* Design Approach Exp */}
-          <div className=" max-w-[634px] ml-20 max-h-[326px] flex flex-col justify-between">
+          <div className=" max-w-[634px] min-[1200px]:ml-20 min-[1200px]:max-h-[326px] flex flex-col justify-between">
             <p>
               As a product engineer with a background in architecture and design
               skills, I excel as <strong>a visual problem solver</strong> and
@@ -60,14 +61,14 @@ export default function Work() {
             <div className="my-[28px]">
               <a
                 href="#skills"
-                className="app_gray underline underline-offset-2 mt-[6px] pl-4"
+                className="blue_accent underline underline-offset-2 mt-[6px] pl-4 italic"
               >
                 View Skills
               </a>{" "}
               <br />
               <a
                 href="#work"
-                className="app_gray underline underline-offset-2 mt-[6px] pl-4"
+                className="blue_accent underline underline-offset-2 mt-[6px] pl-4 italic"
               >
                 View Work
               </a>
@@ -83,11 +84,11 @@ export default function Work() {
       {/* Skills Section */}
       <section
         id="skills"
-        className="relative flex flex-col flex-grow max-container padding-container py-2 px-20  mt-20 mb-[136px] "
+        className="flex flex-col flex-grow py-2 px-20  mt-20 mb-[136px] "
       >
         <h3 className="app_gray font-medium mb-7 ">SKILLS</h3>
-        <div className="flex flex-row mx-auto ">
-          <div id="skill_list" className="flex flex-row">
+        <div className="flex flex-col min-[700px]:flex-row mx-auto ">
+          <div id="skill_list" className="flex min-[700px]:flex-row flex-col">
             <div id="engineering" className=" max-w-[500px] mr-11">
               <h3 className="text-xl font-bold mb-4">Engineering</h3>
               {ENGNSKILLS.map((skill) => (
@@ -117,13 +118,15 @@ export default function Work() {
         <h3 className="app_gray font-medium mb-7">WORK</h3>
         {/* filter bar */}
         <div className="flex flex-row justify-center mb-11">
-          <div className="flex flex-row mb-5 max-w-[1124px] w-full justify-between">
+          <div className="flex flex-col sm:flex-row mb-5 max-w-[1124px] w-full justify-between">
             {WORKTYPES.map((category) => (
               <button
                 key={category}
                 id="workfilter"
                 className={`px-4 py-1 rounded-[500px] font-normal ${
-                  selectedCategory === category ? "app_blk_accent" : "app_gray"
+                  selectedCategory === category
+                    ? "app_blk_accent bg-[#ebebeb]"
+                    : "app_gray"
                 } hover:blue_accent`}
                 onClick={() => setSelectedCategory(category)}
               >
@@ -134,8 +137,8 @@ export default function Work() {
         </div>
         {/* work list section */}
         <div className="flex flex-row justify-center mb-11">
-          <div className="flex flex-row max-w-[1124px] w-full justify-between">
-            <div className="grid grid-cols-3 gap-4">
+          <div className="flex flex-row w-fit md:justify-between mx-auto">
+            <div className="grid min-[870px]:grid-cols-2  min-[1300px]:grid-cols-3 gap-11">
               {filteredWorkList.map((work) => (
                 <WorkCard key={work.id} work={work} />
               ))}

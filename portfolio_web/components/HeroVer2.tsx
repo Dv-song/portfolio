@@ -22,7 +22,7 @@ const Hero = () => {
   );
 
   return (
-    <section className="relative flex flex-col flex-grow max-container padding-container py-2 lg:px-20 px-0">
+    <>
       <div className="bg-black h-[546px] mt-[84px] relative text-white flex flex-col text-center items-center justify-center lg:rounded-lg w-full overflow-hidden">
         <GradientBackground />
         <div className="relative z-10 lg:px-0 px-8">
@@ -44,16 +44,16 @@ const Hero = () => {
         </div>
       </div>
       {/* Section Below: Subcards for life updates */}
-      <div className="flex md:flex-row flex-wrap w-full justify-between item">
+      <div className="flex md:flex-row flex-wrap w-full justify-around lg:justify-between item">
         {LIFE_UPDATES.map((update) => (
           <HeroSubCard title={update.title} content={update.update} />
         ))}
       </div>
       <div className="h-40px mt-5 mx-auto font-medium dark_gray_text flex flex-col items-center">
-        SELECTED WORK
+        SELECTED WORKS
         <Image src={arrowdown} alt="navigation image" />
       </div>
-    </section>
+    </>
   );
 };
 

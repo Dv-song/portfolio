@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { workTypes } from "@/constants";
 
 interface WorkProps {
   work: {
@@ -20,15 +21,50 @@ interface WorkProps {
 }
 
 const WorkCard: React.FC<WorkProps> = ({ work }) => {
+  const getTagClass = (tag: string) => {
+    if (tag === "Internship") {
+      return "";
+    } else if (tag === "Startup") {
+      return "";
+    } else if (tag === "Research") {
+      return "";
+    } else if (tag === "Project") {
+      return "";
+    } else if (tag === "Internship") {
+      return "";
+    }
+
+    for (const worktype of workTypes) {
+      if (worktype.type === "design" && worktype.tags.includes(tag)) {
+        return "work_tag_design";
+      } else if (
+        worktype.type === "engineering" &&
+        worktype.tags.includes(tag)
+      ) {
+        return "work_tag_engn";
+      }
+    }
+
+    return "";
+  };
+
   return (
     <Link href={work.href}>
       <div className="work_card max-w-[360px] h-[436px] flex flex-col justify-between mb-14 image-shadow">
         <div>
-          <Image
-            src={work.coverimg}
-            alt={work.title}
-            className="card_cover w-full object-cover mb-2 rounded"
-          />
+          {work.coverimg.length === 2 ? (
+            <Image
+              src={work.coverimg[1]}
+              alt={work.title}
+              className="card_cover h-[300px] object-cover mb-2 rounded"
+            />
+          ) : (
+            <Image
+              src={work.coverimg[0]}
+              alt={work.title}
+              className="card_cover h-[300px] object-cover mb-2 rounded"
+            />
+          )}
           <div>
             <div className="flex flex-row justify-between app_gray text-sm">
               <p>{work.position}</p>
@@ -39,9 +75,12 @@ const WorkCard: React.FC<WorkProps> = ({ work }) => {
             <p className="app_gray italic">{work.subtitle}</p>
           </div>
         </div>
-        <div className="flex mt-2">
+        <div className="mt-2 flex-wrap">
           {work.skilltags?.map((tag) => (
-            <span key={tag} className="app_gray mr-4 text-sm">
+            <span
+              key={tag}
+              className={`work_tag whitespace-nowrap ${getTagClass(tag)}`}
+            >
               {tag}
             </span>
           ))}

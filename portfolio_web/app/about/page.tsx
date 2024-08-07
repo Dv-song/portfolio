@@ -25,7 +25,7 @@ export default function About() {
         <h3 className="app_gray font-medium mb-7">BIO</h3>
         <div
           id="introduction"
-          className=" w-full flex flex-row items-center mx-auto justify-between max-w-[1123px]"
+          className=" w-full flex flex-row items-center mx-auto justify-between max-w-[1123px] max-[1200px]:flex-col"
         >
           <section id="img_section" className="flex flex-col items-center">
             <Image
@@ -39,7 +39,10 @@ export default function About() {
               Hey!
             </h2>
           </section>
-          <section id="intro_text" className="max-w-[780px] .app_blk_accent">
+          <section
+            id="intro_text"
+            className="max-w-[780px] .app_blk_accent max-[1200px]:mt-8"
+          >
             <p className="">
               My name is Dave, and this is where{" "}
               <strong className="font-semibold">
@@ -221,17 +224,20 @@ export default function About() {
       {/* Education Section */}
       <section
         id="education"
-        className="relative flex flex-col flex-grow max-container padding-container py-2 px-20  mt-20 mb-[136px]"
+        className="relative flex flex-col flex-grow max-container padding-container py-2 px-20 mt-20 mb-[136px]"
       >
         <h3 className="app_gray font-medium mb-7">EDUCATION</h3>
         <div
           id="education_content"
-          className=" w-full flex flex-row items-center mx-auto justify-between max-w-[1123px]  gap-y-32"
+          className="w-full flex flex-row min-[1200px]:items-center min-[1200px]:mx-auto justify-between min-[1200px]:max-w-[1123px] min-[1200px]:gap-y-32 max-[1200px]:flex-col "
         >
-          <section id="brown_uni_info" className=" max-w-[645px]">
+          <section
+            id="brown_uni_info"
+            className="max-w-[645px] max-[1200px]: mb-14"
+          >
             <p className="text-base mb-1">Brown University</p>
             {/* degree information */}
-            <div className="flex flex-row gap-3 font-medium text-xl italic">
+            <div className="flex flex-col sm:flex-row max-sm:mb-4 sm:gap-3 font-medium text-xl italic">
               <p>Sc.B. Computer Science</p>
               <p>A.B. Business Economics</p>
             </div>
@@ -255,17 +261,17 @@ export default function About() {
           </section>
           <section
             id="additional_edu_info"
-            className="flex flex-col flex-grow max-w-[348px] min-h-[300px] justify-between"
+            className="flex flex-col flex-grow min-[1200px]:max-w-[348px] min-[1200px]:min-h-[300px] justify-between"
           >
-            <div>
+            <div className="max-[1200px]: mb-14">
               <p className="text-base mb-1">Republic of Korea Air Force</p>
               {/* More information */}
               <div className="flex flex-row gap-3 font-medium text-xl italic">
-                <p>Honor Guard Staff Sergeant </p>
+                <p>Honor Guard Staff Sergeant</p>
               </div>
               <p>2020 - 2022</p>
             </div>
-            <div>
+            <div className="">
               <p className="text-base mb-1">Rhode Island School of Design</p>
               {/* More information */}
               <div className="flex flex-col font-medium text-xl italic">
@@ -286,7 +292,7 @@ export default function About() {
         <h3 className="app_gray font-medium mb-7">TLDRS & OPINIONS</h3>
 
         <h2
-          className={`text-[30px]  ${playfair.className} italic font-medium app_blk_accent mx-auto  my-[136px]`}
+          className={`text-[30px]  ${playfair.className} italic font-medium app_blk_accent mx-auto  md:my-[136px]`}
         >
           Coming Soon!
         </h2>
@@ -300,7 +306,7 @@ export default function About() {
         <h3 className="app_gray font-medium mb-7 ">SAY HI</h3>
 
         <h2
-          className={`text-[64px]  ${playfair.className} italic font-medium app_blk_accent mx-auto  mt-[136px]`}
+          className={`text-[64px] max-md:text-[30px]  ${playfair.className} italic font-medium app_blk_accent mx-auto  md:mt-[136px]`}
         >
           Let's Connect!
         </h2>
@@ -309,7 +315,7 @@ export default function About() {
           hesitate to reach out! I love making new friends and catching up with
           my old friends.{" "}
         </p>
-        <div className="flex flex-row mt-2 mx-auto gap-4">
+        <div className="flex flex-col md:flex-row mt-2 mx-auto gap-4">
           <a
             href="mailto:seung_heon_song@brown.edu?subject=[From%20Portfolio]%20Hey%20Dave!&body=*%20please%20share%20what%20you%20want%20to%20talk%20about!"
             title="send me an email"

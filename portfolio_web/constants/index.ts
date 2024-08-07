@@ -1,14 +1,31 @@
-import llmcover from "../public/llmCover.png"
+import llmcover from "../public/llmCover.png";
+import llmcover_big from "../public/work_covers/summer_research_2024/2024_summer_research.png";
+import llm_research_logo from "@/public/work_covers/summer_research_2024/cover_logo.png";
 import dymaxioncover from "../public/dymaxionCover.png";
+import dymaxioncover_big from "../public/work_covers/dymaxion/coverImagebig.png";
+import dymaxion_logo from "../public/work_covers/dymaxion/logo.svg";
 import portfoliocover from "../public/portfolioCover.png";
 import cvcover from "../public/cvcover.png";
+import drivealive_image from "../public/work_covers/drivealive/coverimg.png";
+import drivealive_logo from "../public/work_covers/drivealive/logo.png";
 import partifulcover from "../public/partifulcover.png";
+import partiful_cover from "../public/work_covers/partiful/partiful_cover.png";
 import sweolcover from "../public/sewolcover.png";
 import ffcover from "../public/ffcover.png";
 import handercover from "../public/handercover.png"
+import hander_cover from "../public/work_covers/hander/cover_image.png";
 import resocover from "../public/resocover.png";
+import reso_cover from "../public/work_covers/reso/reso_cover.png";
 import qgcover from "../public/quantguidecover.png";
 import sofa from "../public/ysoa.svg";
+import { StaticImageData } from "next/image";
+
+import partiful_cover_long from "../public/landing/Portfolio_Imgs/partifulcard.png";
+import drivealive_cover_long from "../public/landing/Portfolio_Imgs/drivealive_cover_long.png";
+import hander_cover_long from "../public/landing/Portfolio_Imgs/hander_cover_long.png";
+import reso_cover_long from "../public/landing/Portfolio_Imgs/reso_cover_long.png";
+
+
 
 
 export const NAV_LINKS = [
@@ -52,128 +69,187 @@ export const DESIGNSKILLS = [
 export const WORKTYPES = [
     "Selected", "All", "UI/UX", "Engineering", "Research"
 ]
+interface Work {
+    featured: boolean;
+    href: string;
+    id: number;
+    title: string;
+    position: string;
+    time: string;
+    subtitle: string;
+    skilltags: string[];
+    coverimg: StaticImageData[];
+    tag: boolean;
+    tagtxt: string;
+    category: string[];
+    selected: boolean;
+    cover_logo?: StaticImageData;
+    cover_text?: string;
+}
 
-
-export const WORKLIST = [
+export const WORKLIST: Work[] = [
     {
-        href: "/work",
-        id: 1, title: 'Multimodal LLM Research',
-        position: "Research Assistant",
-        time: "Summer 2024",
-        subtitle: "Summer Research @ Brown University", skilltags: ["AI/ML", "Database", "SQL"],
-        coverimg: llmcover,
-        tag: true,
-        tagtxt: "Summer 2024",
-        category: ['Research', 'Selected'], selected: true
-    },
-    {
-        href: "/work",
+        featured: true,
+        href: "/work/pages/wip",
         id: 2, title: 'Dymaxion',
-        position: "Software Engineer",
+        position: "Software Engineer Intern",
         time: "Summer 2024",
-        subtitle: "Automating Interior Design", skilltags: ["Full-Stack", "Mobile Dev", "Swift", "Intern"],
-        coverimg: dymaxioncover,
+        subtitle: "Automating Interior Design",
+        skilltags: ["Full-Stack", "iOS Development", "Internship"],
+        coverimg: [dymaxioncover_big],
         tag: true,
         tagtxt: "Summer 2024",
-        category: ['Engineering', 'Selected'], selected: true
+        category: ['Engineering', 'Selected'],
+        selected: true,
+        cover_logo: dymaxion_logo,
+        cover_text: "Making Interior Design More Accessible with an Automated Furniture Recommendation Algorithm",
     },
     {
-        href: "/work",
+        featured: true,
+        href: "/work/pages/partiful",
+        id: 6, title: 'Partiful',
+        position: "UX Designer",
+        time: "Spring 2024",
+        subtitle: "Optimizing user experience for Partiful users. Focus: Past Events",
+        skilltags: ["UI/UX", "Prototyping", "Project"],
+        coverimg: [partiful_cover_long, partifulcover],
+        tag: false,
+        tagtxt: "",
+        category: ['UI/UX', 'Selected'],
+        selected: true,
+        cover_text: "Making Past Memories More Accessible",
+    },
+    {
+        featured: true,
+        href: "/work/pages/wip",
+        id: 1, title: 'Brown University & RI Hospital',
+        position: "LLM Student Researcher",
+        time: "Summer 2024",
+        subtitle: "Summer Research @ Brown University",
+        skilltags: ["LLM", "DSPy", "RAG", "Research"],
+        coverimg: [llmcover_big],
+        tag: true,
+        tagtxt: "Summer 2024",
+        category: ['Research', 'Selected'],
+        selected: true,
+        cover_logo: llm_research_logo,
+        cover_text: "Optimizing Local LLM Agents-Based System to Protect Protected Health Information in Freeform Clinical Notes"
+    },
+    {
+        featured: false,
+        href: "/work/pages/wip",
         id: 3, title: 'Portfolio Development',
         position: "Project",
         time: "2024",
         subtitle: "Personal Portfolio Design & Development.", skilltags: ["UI/UX", "Frontend", "Design"],
-        coverimg: portfoliocover,
+        coverimg: [portfoliocover],
         tag: false,
         tagtxt: "",
         category: ['UI/UX', 'Engineering', 'Selected'], selected: true
     },
     {
-        href: "/work",
-        id: 4, title: 'Drowsiness Detection Device',
+        featured: true,
+        href: "/work/pages/wip",
+        id: 4, title: 'DriveAlive',
         position: "Project",
-        time: "2024",
-        subtitle: "Drowsiness detection using Machine Learning and Convolutional Neural Network for Drivers.", skilltags: ["AI/ML", "UIUX", "Computer Vision"],
-        coverimg: cvcover,
+        time: "Spring 2024",
+        subtitle: "Drowsiness detection using Machine Learning and Convolutional Neural Network for Drivers.",
+        skilltags: ["AI/ML", "Computer Vision", "Project"],
+        coverimg: [drivealive_cover_long],
         tag: true,
         tagtxt: "Work In Progress",
-        category: ['Engineering'], selected: true
+        category: ['Engineering'],
+        selected: true,
+        cover_logo: drivealive_logo,
+        cover_text: "Drowsiness Detection System Using Machine Learning and Convolutional Neural Networks for Rideshare Drivers",
     },
     {
+        featured: false,
         href: "/work/pages/YaleSchoolOfArt",
         id: 5, title: 'Yale School of Art Redesign',
         position: "Project",
         time: "2024",
-        subtitle: "Redesign of the Yale School of Art Website for Enhanced Accessibility and Coherence.", skilltags: ["UIUX"],
-        coverimg: sofa,
+        subtitle: "Redesign of the Yale School of Art Website for Enhanced Accessibility and Coherence.", skilltags: ["UI/UX"],
+        coverimg: [sofa],
         tag: true,
         tagtxt: "",
         category: ['UI/UX'], selected: true
     },
     {
-        href: "/work/pages/partiful",
-        id: 6, title: 'Partiful',
-        position: "UX Designer",
-        time: "2024",
-        subtitle: "Optimizing user experience for Partiful users. Focus: Past Events", skilltags: ["UIUX"],
-        coverimg: partifulcover,
-        tag: false,
-        tagtxt: "",
-        category: ['UI/UX', 'Selected'], selected: true
-    },
-    {
-        href: "/work",
+        featured: false,
+        href: "/work/pages/wip",
         id: 7, title: 'SeWol(세월)',
         position: "Project",
         time: "2024",
-        subtitle: "Exploring the meaning of space ownership in the modern urban environment.", skilltags: ["HCI", "UIUX", "AI/ML"],
-        coverimg: sweolcover,
+        subtitle: "Exploring the meaning of space ownership in the modern urban environment.", skilltags: ["HCI", "UI/UX", "AI/ML"],
+        coverimg: [sweolcover],
         tag: true,
         tagtxt: "Work In Progress",
         category: ['Engineering', 'Research'], selected: true
     },
     {
-        href: "/work",
+        featured: false,
+        href: "/work/pages/wip",
         id: 8, title: 'ForeverFan',
         position: "UX Designer",
         time: "2024",
-        subtitle: "Connecting independent artists with their fans.", skilltags: ["UIUX"],
-        coverimg: ffcover,
+        subtitle: "Connecting independent artists with their fans.", skilltags: ["UI/UX"],
+        coverimg: [ffcover],
         tag: false,
         tagtxt: "",
-        category: 'UI/UX', selected: false
+        category: ['UI/UX'], selected: false
     },
     {
+        featured: true,
         href: "/work/pages/hander",
         id: 9, title: 'Hander',
         position: "Co-Founder",
         time: "2023 - 2024",
-        subtitle: "With mission to reduce carbon footprint of college students.", skilltags: ["UIUX", "PM", "Full-Stack", "Startup"],
-        coverimg: handercover,
+        subtitle: "With mission to reduce carbon footprint of college students.",
+        skilltags: ["UX Research", "Full-Stack", "Startup"],
+        coverimg: [hander_cover_long, handercover],
         tag: false,
         tagtxt: "",
-        category: ['UI/UX', 'Engineering', 'Selected'], selected: true
+        category: ['UI/UX', 'Engineering', 'Selected'], selected: true,
+        cover_text: "E-commerce Platform for College Students to Buy and Sell Second-Hand Items"
     },
     {
-        href: "/work",
+        featured: true,
+        href: "/work/pages/wip",
         id: 10, title: 'Reso',
         position: "Chief of Staff, UX Researcher",
         time: "2023 - 2024",
-        subtitle: "Reimagining case management process for arbitrators and law firms.", skilltags: ["UIUX", "PM", "UX Research"],
-        coverimg: resocover,
+        subtitle: "Reimagining case management process for arbitrators and law firms.",
+        skilltags: ["UI/UX", "Product Design", "Internship"],
+        coverimg: [reso_cover_long, resocover],
         tag: false,
         tagtxt: "",
-        category: ['UIUX'], selected: true
+        category: ['UIUX'], selected: true,
+        cover_text: "Reimagining Case Management for Arbitrators and Law Firms",
     },
     {
-        href: "/work",
+        featured: false,
+        href: "/work/pages/wip",
         id: 11, title: 'QuantGuide',
         position: "UIUX Designer, Frontend Dev",
         time: "2023",
-        subtitle: "Making quant interview prep more accessible.", skilltags: ["Frontend", "UIUX"],
-        coverimg: qgcover,
+        subtitle: "Making quant interview prep more accessible.", skilltags: ["Frontend", "UI/UX"],
+        coverimg: [qgcover],
         tag: false,
         tagtxt: "",
         category: ['UIUX', 'Engineering'], selected: true
     }
 ];
+
+
+export const workTypes: { type: string, tags: string[] }[] = [
+    {
+        type: "design",
+        tags: ["UX Research", "Product Design", "UI/UX", "Design", "Prototyping"]
+    },
+    {
+        type: "engineering",
+        tags: ["LLM", "DSPy", "Full-Stack", "iOS Development", "Frontend", "Design", "AI/ML", "Computer Vision", "RAG"]
+
+    }
+]

@@ -37,6 +37,10 @@ body {
   color: #8d8d8d;
 }
 
+.app_gray_bg {
+  color: #8d8d8d;
+}
+
 .hander_accent {
   color: #00b6b0;
 }
@@ -129,11 +133,139 @@ body {
   cursor: pointer;
 }
 
+.work_tag {
+  background-color: #e1e1e1;
+  color: #888888;
+  margin-right: 0.75rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 1.5rem;
+  width: fit-content;
+  font-size: 0.8rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.work_tag_portfolio {
+  background-color: #e1e1e1;
+  color: rgb(70, 70, 70);
+  margin-right: 0.75rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 1.5rem;
+  width: fit-content;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.work_card:hover .cover_overlay {
+  opacity: 1;
+}
+
+.cover_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.learn_more_btn {
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.learn_more_btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.work_tag_engn {
+  background-color: #d3e4ee;
+}
+
+.work_tag_design {
+  background-color: #dbecdb;
+}
+
+.work_tag_internship {
+  background-color: #ffe2dd;
+}
+.work_tag_startup {
+  background-color: #f4f0f8;
+}
+.work_tag_research {
+  background-color: #ede0db;
+}
+.work_tag_project {
+  background-color: #ede0db;
+}
+
 .image-shadow .card_cover {
   transition: box-shadow 0.3s ease-in-out;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 .image-shadow:hover .card_cover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.work_card_time_tag {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: fit-content;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* setting up for the portfolio component */
+
+.portfolio_header {
+  max-width: 1700px;
+  margin: auto;
+}
+
+.portfolio_back_btn {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+}
+
+.portfolio_intro,
+.role_section {
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px;
+}
+
+.portfolio_section {
+  margin-bottom: 40px;
+}
+
+.section_header {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section_subtitle::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin-left: 20px;
 }
