@@ -43,7 +43,7 @@ export const LIFE_UPDATES = [
 
 export const CONTACTS = [
     { href: 'mailto:seung_heon_song@brown.edu?subject=[From%20Portfolio]%20Hey%20Dave!&body=Dear%20Dave%2C%0D%0AHi!%0D%0A*%20please%20share%20what%20you%20want%20to%20talk%20about!', key: 'Email', label: "Let's Chat!" },
-    { href: "https://docs.google.com/document/d/15BK_cKjaB5VSf5g-ugilq0ZpE-pmAlMVKnlNvL5jAT0/edit?usp=sharing", key: 'Résumé', label: "📍" },
+    { href: "https://drive.google.com/file/d/1Izac394CQ69lpZAIJqJugIWH7CtahLrS/view?usp=sharing", key: 'Résumé', label: "📍" },
     { href: 'https://github.com/Dv-song', key: 'Github', label: "For Code" },
     { href: 'https://www.linkedin.com/in/davidshsong/', key: 'LinkedIn', label: "More about me" },
     { href: 'https://www.instagram.com/d.songg/', key: 'Instagram', label: "👋" },
