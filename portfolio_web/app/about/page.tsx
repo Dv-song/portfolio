@@ -41,50 +41,29 @@ export default function About() {
           </section>
           <section
             id="intro_text"
-            className="max-w-[780px] .app_blk_accent max-[1200px]:mt-8"
+            className="max-w-[780px] .app_blk_accent max-[1200px]:mt-8 "
           >
-            <p className="">
-              My name is Dave, and this is where{" "}
+            <p className="mt-8">
+              My name is Dave, and this is where I share{" "}
+              <strong className="font-semibold">my work and thoughts</strong>.
+              I&#39;m an aspiring{" "}
+              <strong className="font-semibold">product engineer </strong>
+              with a focus on{" "}
               <strong className="font-semibold">
-                I share my work & writings{" "}
+                User Experience (UX) and software engineering (SWE)
               </strong>
-              . I am a{" "}
-              <strong className="font-semibold">
-                product engineer (UX + SWE){" "}
-              </strong>
-              based in Providence, RI and Seoul, South Korea. I thrive at the{" "}
-              <strong className="font-semibold">
-                intersection of design and engineering
-              </strong>
-              . I'm driven by my passion for{" "}
-              <strong className="font-semibold">
-                human-centered design and software development
-              </strong>
-              . At Brown University, I study{" "}
-              <strong className="font-semibold">Computer Science</strong> and{" "}
-              <strong className="font-semibold">Business Economics</strong>.
+              , based in Providence, RI, and Seoul, South Korea. I thrive at the
+              crossroads of{" "}
+              <strong className="font-semibold">design and engineering</strong>,
+              with a passion for creating meaningful solutions to both practical
+              problems and philosophical questions.{" "}
             </p>
             <br />
             <p>
-              Currently, I'm at{" "}
-              <strong
-                className={`font-semibold link_gray ${
-                  hoveredIndex === 1 ? "gradient-text" : ""
-                }`}
-                onMouseEnter={() => setHoveredIndex(1)}
-                onMouseLeave={() => setHoveredIndex(null)}
-              >
-                <a
-                  href="https://www.hander.us/"
-                  className={`link_underline`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Hander
-                </a>
-                <sup className="text-sm">1</sup>
-              </strong>{" "}
-              focusing on building & growing. When I'm not working on{" "}
+              Currently, I&#39;m a senior studying{" "}
+              <strong className="font-semibold">Computer Science</strong> and{" "}
+              <strong className="font-semibold">Business Economics</strong> at
+              Brown University. Outside the classroom, I&#39;m working on{" "}
               <strong
                 className={`font-semibold link_gray ${
                   hoveredIndex === 1 ? "gradient-text" : ""
@@ -102,25 +81,46 @@ export default function About() {
                 </a>
                 <sup className="text-sm">1</sup>
               </strong>
-              , I'm at{" "}
+              , a startup aimed at reducing the carbon footprint within college
+              communities. When I&#39;m not working on{" "}
               <strong
                 className={`font-semibold link_gray ${
-                  hoveredIndex === "2" ? "gradient-text" : ""
+                  hoveredIndex === 1 ? "gradient-text" : ""
                 }`}
-                onMouseEnter={() => setHoveredIndex("2")}
+                onMouseEnter={() => setHoveredIndex(1)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 <a
-                  href="https://www.reso.io/"
+                  href="https://www.hander.us/"
                   className={`link_underline`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Reso
+                  Hander
                 </a>
-                <sup className="text-sm">2</sup>
-              </strong>{" "}
-              or{" "}
+                <sup className="text-sm">1</sup>
+              </strong>
+              , I am at{" "}
+              <strong
+                className={`font-semibold link_gray ${
+                  hoveredIndex === "5" ? "gradient-text" : ""
+                }`}
+                onMouseEnter={() => setHoveredIndex("5")}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <a
+                  href="https://www.brown.edu/"
+                  className={`link_underline`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  MedDB Lab at Brown
+                </a>
+                <sup className="text-sm">5</sup>
+              </strong>
+              , where I&#39;m involved in developing an LLM Agent-based
+              redaction system for medical datasets. My past experiences include
+              roles at{" "}
               <strong
                 className={`font-semibold link_gray ${
                   hoveredIndex === "3" ? "gradient-text" : ""
@@ -138,7 +138,25 @@ export default function About() {
                 </a>
                 <sup className="text-sm">3</sup>
               </strong>
-              . Previously at{" "}
+              ,
+              <strong
+                className={`font-semibold link_gray ${
+                  hoveredIndex === "2" ? "gradient-text" : ""
+                }`}
+                onMouseEnter={() => setHoveredIndex("2")}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <a
+                  href="https://www.reso.io/"
+                  className={`link_underline`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Reso
+                </a>
+                <sup className="text-sm">2</sup>
+              </strong>
+              ,
               <strong
                 className={`font-semibold link_gray ${
                   hoveredIndex === "2,3" ? "gradient-text" : ""
@@ -174,10 +192,9 @@ export default function About() {
                 </a>
                 <sup className="text-sm">4</sup>
               </strong>
-              . Lately, I've been interested in HCI research, Hard Tech, and
-              architecture.On the side, I snowboard, paint, design architecture
-              models, lift things (resistance training & crossfit), and enjoy
-              coffee.
+              . My recent interests revolve around human-computer interaction,
+              robotics, and architecture. In my free time, I enjoy snowboarding,
+              painting, CrossFit, and savoring a good cup of coffee.
             </p>
 
             <ol
@@ -216,6 +233,13 @@ export default function About() {
               >
                 4. Director, Head of Tech Consultant
               </li>
+              <li
+                className={`max-w-fit ${
+                  hoveredIndex === "5" ? "gradient-text" : ""
+                }`}
+              >
+                5. Research Assistant
+              </li>
             </ol>
           </section>
         </div>
@@ -246,17 +270,17 @@ export default function About() {
             <h4 className="font-medium text-xl mt-2">Relevant Courses</h4>
             <h5 className="font-medium app_gray mt-4 mb-1">Computer Science</h5>
             <p>
-              Computer Vision, Artificial Intelligence, Machine Learning, UI/UX,
-              Computer Systems, Intro to Software Engineering, Data Structures &
-              Algorithms
+              Data Science Fellows, Computer Vision, Artificial Intelligence,
+              Machine Learning, UI/UX, Computer Systems, Intro to Software
+              Engineering, Data Structures & Algorithms
             </p>
             <h5 className="font-medium app_gray mt-4 mb-1">
               Business-Economics
             </h5>
             <p>
-              Investments, Applied Research Methods, Microeconomics,
-              Macroeconomics, Financial Accounting, Principles of Economics,
-              Statistical Inference
+              Game Theory, Investments, Applied Research Methods,
+              Microeconomics, Macroeconomics, Financial Accounting, Principles
+              of Economics, Statistical Inference
             </p>
           </section>
           <section
