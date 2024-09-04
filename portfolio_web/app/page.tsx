@@ -13,7 +13,9 @@ export default function Home() {
         <HeroVer2 />
         {/* Selected work section */}
         {/* work list section */}
-        <h1 className="text-2xl font-medium dark_gray_text">_SELECTED WORKS</h1>
+        <h1 className="text-2xl font-medium dark_gray_text mt-14 ml-8 lg:ml-0">
+          _SELECTED WORKS
+        </h1>
         <div className="flex flex-row justify-center mb-11 mt-14">
           <div className="w-full">
             <div className="flex flex-wrap justify-around">

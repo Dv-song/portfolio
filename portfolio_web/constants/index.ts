@@ -36,8 +36,8 @@ export const NAV_LINKS = [
 
 export const LIFE_UPDATES = [
     { title: "Currently Interested in...", update: ["💡  entrepreneurship and idea validation", "🦾  distributed AI agent systems in indoor environment"] },
-    { title: "Work Updates: Summer '24", update: ["🩺 [Research] Working on utilizing LLM based agent to protect patient privacy.", "🖥️ [Internship] Software Engineering Intern @ Dymaxion"] },
-    { title: "Life Updates", update: ["🌞 Love lifting heavy objects repeatedly & reading Survival of the Friendliest by Brian Hare and Vanessa Woods"] },
+    { title: "Work Updates: Fall '24", update: ["🩺 [Research] Working on utilizing LLM based agent to protect patient privacy.", ""] },
+    { title: "Life Updates", update: ["🌞 Reading Survival of the Friendliest by Brian Hare and Vanessa Woods"] },
 ];
 
 
