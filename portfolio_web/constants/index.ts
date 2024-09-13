@@ -90,7 +90,7 @@ interface Work {
 export const WORKLIST: Work[] = [
     {
         featured: true,
-        href: "/work/pages/wip",
+        href: "/work/pages/dymaxion",
         id: 2, title: 'Dymaxion',
         position: "Software Engineer Intern",
         time: "Summer 2024",

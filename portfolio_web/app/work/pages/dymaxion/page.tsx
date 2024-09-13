@@ -36,23 +36,46 @@ const content: any = [
     ],
   },
   { type: "image_full", src: "/work_pages/dymaxionproduct_image.jpg" },
-  { type: "header", text: "Impact" },
-  { type: "section_subtitle", text: "Growth & Reflection" },
+  { type: "header", text: "My Impact" },
+  {
+    type: "list",
+    contentList: [
+      "Ideated and evaluated product workflows for both the company's web and mobile application services.",
+      "Implemented 15+ pages and workflows for the company’s web app, including design portfolio, pricing, and interior design style quiz pages.",
+      "Led the development of an iOS application utilizing Apple’s RoomPlan and QuickLook APIs to provide fast and reliable spatial data from users' smartphones.",
+    ],
+    color: "portfolio_text_color",
+  },
+  { type: "header", text: "Reflection & Growth" },
+  { type: "section_subtitle", text: "TL;DR" },
+  {
+    type: "list",
+    contentList: [
+      "Extensive self-learning and exploration with a strong attention to detail for pixel-perfect implementation of product prototypes.",
+      "Gained exposure to LLM model reasoning, Retrieval-Augmented Generation (GraphRAG), alongside conventional web development tools.",
+      "Effective communication is essential for constructive and successful project execution.",
+    ],
+    color: "portfolio_text_color",
+  },
   {
     type: "body_text",
-    text: " Hander was started not for revenue generation but to pursue what we \
-          believed was the most meaningful and impactful for college \
-          communities. Since most of the MVP development and user interviews \
-          were conducted during the semester, it was essential to adhere to \
-          agile methodology. In fact, the most important lesson was the \
-          experience of leading a real-world project with design and engineering \
-          teams. It was crucial to organize and prioritize work and utilize \
-          rapid prototyping with wireframes to explore ideas while conserving \
-          the resources and time of the engineering team. We are planning to \
-          implement some of the exciting features for the platform this summer \
-          and can't wait to grow with the company. The workflow chart below \
-          provides a high-level overview of the flow chart I have developed for \
-          our teams to increase efficiency during the semester. ",
+    text: "At Dymaxion, I developed a diverse set of skills, both technical and interpersonal, that have been instrumental in my involvement with entrepreneurial organizations at Brown University and various startups. My exposure to the end-to-end development of client-facing products provided valuable insights into how technical implementations and user story details directly impact business strategies and revenue models. This experience allowed me to gain a deeper understanding of product development beyond just coding, connecting technical solutions with broader business objectives.",
+    style: "",
+  },
+  {
+    type: "body_text",
+    text: "Working as a software engineer intern for Dymaxion required significant self-learning and a commitment to perfection. Although my work was primarily focused on front-end development, I was responsible for delivering pixel-perfect implementations of high-fidelity prototypes created by designers, catering to both tech-savvy and design-conscious customers. This involved extensive use of custom CSS, Bootstrap CSS, React, Swift, and JavaScript. I also participated in algorithm research, which required an in-depth understanding of spatial modeling, incorporating LLMs for reasoning, and using RAG to optimize recommendation accuracy.",
+    style: "",
+  },
+  {
+    type: "body_text",
+    text: "Lastly, I’ve come to appreciate the interpersonal skills I gained from working with startups. As an intern, many implementation details and final prototype designs were shaped through conversations between engineers and designers. This involved explaining technical concepts to non-technical team members from design or interior design teams. Despite being an intern, when I had a valid rationale from an engineering perspective, I learned to lead discussions, modifying final prototypes to improve scalability and feasibility based on project priorities.",
+    style: "",
+  },
+  {
+    type: "body_text",
+    text: "While I can’t share technical details, I’d be happy to discuss my experience further. Feel free to reach out!",
+    style: "italic",
   },
 ];
 

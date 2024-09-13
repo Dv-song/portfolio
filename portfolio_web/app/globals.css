@@ -125,6 +125,10 @@ body {
   }
 }
 
+.portfolio_text_color {
+  color: #36373b;
+}
+
 .app_blk_accent {
   color: #121929;
 }
