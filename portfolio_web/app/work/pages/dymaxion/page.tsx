@@ -11,7 +11,7 @@ const content: any = [
     company: "Dymaxion",
     subtitle:
       "Making interior design more accessible through automated furniture recommendation algorithms.",
-    timeline: "March 2023 - Present",
+    timeline: "May 2024 - August 2024",
     explanation:
       "Dymaxion is a San Francisco-based tech startup focused on making interior design more accessible. They offer an AI-driven design platform that automates traditionally high-commitment and costly interior design processes. By partnering with design studios and online retailers, Dymaxion aims to simplify interior design consultancy and furniture recommendations, making them more accessible and frictionless for everyone.",
   },

@@ -121,7 +121,7 @@ export const WORKLIST: Work[] = [
     },
     {
         featured: true,
-        href: "/work/pages/wip",
+        href: "/work/pages/brownresearch",
         id: 1, title: 'Brown University & RI Hospital',
         position: "LLM Student Researcher",
         time: "Summer 2024",
