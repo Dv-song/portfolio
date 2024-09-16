@@ -137,7 +137,7 @@ export const WORKLIST: Work[] = [
     },
     {
         featured: false,
-        href: "/work/pages/wip",
+        href: "/work/pages/portfolio",
         id: 3, title: 'Portfolio Development',
         position: "Project",
         time: "2024",

@@ -93,7 +93,7 @@ const ProjectIntro = ({
   explanation,
   accentColor = "#000000",
 }: ProjectIntroProps) => (
-  <div className="relative flex flex-col flex-grow py-2 px-10 max-w-[1000px] mx-auto">
+  <div className="relative flex flex-col flex-grow py-2 px-10 w-full max-w-[1000px] mx-auto">
     <h1
       className="text-[48px] font-semibold"
       style={{
@@ -196,7 +196,7 @@ const ContentList = ({ contentList, color }: ContentListProps) => (
   <div className="max-w-[1000px] px-10 w-full mb-10">
     <ul className={`list-disc ml-5 ${color}`}>
       {contentList.map((item, key) => (
-        <li className="">{item}</li>
+        <li className="pb-3">{item}</li>
       ))}
     </ul>
   </div>
