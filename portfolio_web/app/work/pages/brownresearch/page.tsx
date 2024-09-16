@@ -38,6 +38,10 @@ const content: any = [
     type: "body_text",
     text: "Strict adherence to ethical and legal requirements, such as HIPAA, is critical when handling sensitive patient information. Under HIPAA, 18 identifiers are classified as PHI, and failing to anonymize these can result in significant legal and ethical issues. Traditional methods—such as manual redaction, rule-based systems, and conventional NLP models—struggle with context-dependent PHI, leading to potential oversights. The LLM-based pipeline addresses these limitations, offering a more sophisticated approach by integrating local LLMs into the redaction process.",
   },
+  {
+    type: "body_text",
+    text: "While findings and research pipeline implementation details will be shared in an upcoming publication, the main approach centers around training and optimizing LLM performance using prompt engineering frameworks like DSPy to enhance redaction accuracy.",
+  },
   { type: "section_subtitle", text: " " },
   { type: "section_subtitle", text: "Fall '24 Updates" },
   {
